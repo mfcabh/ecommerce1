@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'category.apps.CategoryConfig',
     'accounts.apps.AccountsConfig',
+    'store.apps.StoreConfig',
 ]
 
 MIDDLEWARE = [
@@ -104,6 +105,9 @@ USE_I18N = True
 
 USE_TZ = True
 
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
